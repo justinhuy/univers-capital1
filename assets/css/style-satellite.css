@@ -1,0 +1,197 @@
+
+
+@media (max-width: 767px) {
+	.fan {
+		height: 75px;
+		width: 50px;
+	}
+	.head {
+		width: 75px; 
+		height: 75px;
+	}	
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.fan {
+		height: 90px;
+		width: 60px;
+	}
+	.head {
+		width: 90px; 
+		height: 90px;
+	}
+	
+}
+
+@media (min-width: 992px)  {
+	.fan {
+		height: 120px;
+		width: 80px;
+	}
+	.head {
+		width: 120px; 
+		height: 120px;
+	}
+}
+
+
+
+.fan {
+	position: relative;
+}
+
+.red-light {
+	background-image: radial-gradient(red, rgba(0,0,0,0), rgba(0,0,0,0));
+	position: absolute;
+	width: 40px; height: 40px; border-radius: 100%;
+	left: 50%; transform: translateX(-50%);
+	top: 0;
+	z-index: 15;
+	animation: stars 1s linear infinite;
+}
+
+
+.head-wrapper {
+	position: absolute;
+	left: 50%; transform: translateX(-50%);
+	z-index: 10;
+	top: 40%;
+}
+
+.head {
+	border: 3px solid rgba(0,0,0,.5);
+	
+	align-items: center;
+	-webkit-animation-name: rotateHead;
+	animation-name: rotateHead;
+	-webkit-animation-duration: 10s;
+	animation-duration: 10s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	
+	position: relative;
+	transform-origin: center;
+	transform-style: preserve-3d;
+	z-index: 1;
+	
+	/*background-image: radial-gradient(#31CBFF, #7DDAFF);*/
+	background-image: radial-gradient(rgba(50,0,230,1), rgba(255,255,255,0));
+}
+
+.head::before, .head::after {
+	border: 3px solid rgba(0,0,0,.5);
+	border-radius: 50%;
+	content: "";
+	height: 100%;
+	position: absolute;
+	transform: scale(0.9, 0.9) translateZ(-5px);
+	transform-style: preserve-3d;
+	width: 100%;
+}
+.head::after {
+	border: 3px solid black;
+	transform: scale(0.8, 0.8) translateZ(-10px);
+}
+
+.blades {
+	-webkit-animation-name: rotateBlades;
+	animation-name: rotateBlades;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+
+	height: 80%;
+	position: relative;
+	width: 80%;
+}
+
+
+
+
+
+/* Fan Blade Color */
+
+.blades::before, .blades::after,
+.blades .blade-inner::after {
+	/*background: #0B0B36;*/
+	background-image: radial-gradient(rgba(0,0,0,.1), rgba(0,0,0,0));
+	/*box-shadow: inset -4px -12px 2px 2px red;*/
+}
+
+
+
+
+.blades::before, .blades::after {	
+	content: "";
+	height: 50%;
+	position: absolute;
+	width: 25%;
+}
+
+
+
+
+/* Fan Blade 3 */
+.blades .blade-inner::after {	
+	content: "";
+	height: 50%;
+	position: absolute;
+	right: 0;
+	transform: rotate(120deg) translate(60%, 60%);
+	transform-origin: bottom;
+	width: 25%;
+}
+
+
+
+
+
+
+
+
+
+.blades::after {
+	left: 50%;
+	transform: translateX(-50%);
+}
+.blades::before {
+	right: 50%;
+	transform: rotate(240deg) translate(-20%, 20%);
+	transform-origin: bottom;
+}
+
+
+/* Center Point */
+.blades .blade-inner::before {
+	background-image: radial-gradient(#0065FD, #110076);
+	box-shadow: 0 0 0 5px #080F50;
+	border-radius: 50%;
+	content: "";
+	height: 15%;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 15%;
+	z-index: 1;
+}
+
+
+
+
+.body {
+	position: absolute;
+	top: 0;
+	z-index: 5;
+}
+
+

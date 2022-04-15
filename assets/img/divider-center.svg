@@ -1,0 +1,20 @@
+<svg width="640" height="40" viewBox="0 0 640 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g style="mix-blend-mode:screen">
+<path d="M320 40C331.046 40 340 31.0457 340 20C340 8.9543 331.046 0 320 0C308.954 0 300 8.9543 300 20C300 31.0457 308.954 40 320 40Z" fill="url(#paint0_radial_67_74348)"/>
+</g>
+<g style="mix-blend-mode:screen">
+<path d="M0 21L640 21.0001L640 19.0001L3.49701e-07 18.9999L0 21Z" fill="url(#paint1_linear_67_74348)"/>
+</g>
+<circle cx="320" cy="20" r="3" fill="#FA98AA"/>
+<defs>
+<radialGradient id="paint0_radial_67_74348" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(320.022 20.011) scale(20)">
+<stop stop-color="#F43F6B"/>
+<stop offset="1" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="paint1_linear_67_74348" x1="640" y1="21.0001" x2="0" y2="21" gradientUnits="userSpaceOnUse">
+<stop/>
+<stop offset="0.499492" stop-color="#E25656"/>
+<stop offset="1"/>
+</linearGradient>
+</defs>
+</svg>

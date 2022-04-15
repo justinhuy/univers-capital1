@@ -1,0 +1,476 @@
+
+
+
+
+
+
+
+
+
+.main-content {
+	position: relative;
+}
+
+
+
+
+.default-container {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;	
+	width: 88%;
+	max-width: 1280px;	
+}
+
+.fw-container {
+	width: 100%;
+	max-width: none;	
+}
+
+
+
+
+
+
+@media (max-width: 575px) {
+	.default-container {
+		padding: 80px 0;
+	} 	
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+	.default-container {
+		padding: 100px 0;
+	} 
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.default-container {
+		padding: 130px 0;
+	} 
+}
+
+@media (min-width: 992px)  {
+	.default-container {
+		padding: 160px 0;
+	} 
+}
+
+
+.top-container {
+	padding-top: 0;
+}
+
+
+
+
+
+
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+	display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+}
+
+
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+
+@font-face {
+	font-family: "UTM Neo Sans Intel";
+	src: url("../fonts/UTM Neo Sans Intel.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "UTM Neo Sans Intel";
+	src: url("../fonts/UTM Neo Sans IntelBold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* All types of container 
+	1. Default
+	2. Large
+	3. Full
+	4. Custom Top (xtop-container)	
+*/
+
+
+
+
+
+
+
+body {
+	overflow-x: hidden;
+	/*font-family: UTM Neo Sans Intel;*/
+	font-family: 'Orbitron', sans-serif;
+	font-weight: 400;
+	background: #06001C;
+	color: #fff;
+}
+
+section {
+	position: relative;
+}
+
+img {
+	width: 100%;
+}
+
+a {
+	text-decoration: none;	
+}
+
+h2 {
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+h3, h4 {
+	margin-bottom: .66em;
+}
+
+
+
+p {	
+	line-height: 1.5em; 
+	font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+/*** Details ***/
+
+@media (max-width: 575px) {
+	h2 { font-size: 30px; }	
+	h3 { font-size: 22px; }	
+	h4 { font-size: 20px; }	
+	p  { font-size: 16px; } 
+	.lp { font-size: 18px; }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+	h2 { font-size: 36px; }	
+	h3 { font-size: 28px; }	
+	h4 { font-size: 24px; }	
+	p  { font-size: 17px; } 
+	.lp { font-size: 20px; }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	h2 { font-size: 42px; }	
+	h3 { font-size: 34px; }	
+	h4 { font-size: 28px; }	
+	p  { font-size: 18px; } 
+	.lp { font-size: 22px; }
+}
+
+@media (min-width: 992px)  {
+	h2 { font-size: 48px; }	
+	h3 { font-size: 40px; }	
+	h4 { font-size: 32px; }	
+	p  { font-size: 18px; } 
+	.lp { font-size: 24px; }
+}
+
+
+
+
+
+
+
+/** Sticky Buttons **/
+
+
+#sticky-btns {
+	position: fixed;
+	right: 20px;
+	bottom: 10%;
+	max-width: 120px;
+	text-align: right;
+	z-index: 1001 !important;
+}
+
+
+#sticky-btns .telegram .text {
+	text-align: right;
+	margin-bottom: 15px;
+	font-size: 14px;
+	color: rgba(255,255,255,.5);
+}
+
+#sticky-btns .telegram {
+	text-align: right;
+	margin-bottom: 15px;
+}
+
+#sticky-btns .telegram .icon {
+	display: inline-block;
+}
+
+#sticky-btns .telegram .icon img {
+	border-radius: 5px;
+}
+
+
+
+#sticky-btns a .icon {
+	width: 40px;
+	height: 40px;
+}
+
+
+#sticky-btns a {
+	display: inline-block;
+}
+
+
+#sticky-btns .backtop {
+	background: rgba(255,255,255,.1);
+	border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+/** Basis Modifying for Bootstrap **/
+
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+	--bs-gutter: 0;		
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.row>* {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+
+.column {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+
+
+
+
+
+.et-block:after {
+    display: block;
+    visibility: hidden;
+    clear: both;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    content: ".";
+}
+
+.special-el {
+	position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+.divider {
+	mix-blend-mode: screen;
+	display: flex;
+}
+
+
+.divider img {	
+	max-width: 640px;
+	margin: auto;
+}
+
+.divider.center img {	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+@media (max-width: 575px) {
+	.divider {
+		height: 20px;
+		margin-bottom: 10px;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+	.divider {
+		height: 30px;
+		margin-bottom: 15px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.divider {
+		height: 35px;
+		margin-bottom: 20px;
+	}
+}
+
+@media (min-width: 992px)  {
+	.divider {
+		height: 40px;
+		margin-bottom: 25px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.divi-layout:after {
+    display: block;
+    visibility: hidden;
+    clear: both;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    content: ".";
+}
+
+
+
+.overlay:after {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.65);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 575px) {
+	
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+	
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+}
+
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+	
+}
+
+
+@media (min-width: 1400px) {
+	
+}
+
+
+
+
+
+
+
+
+
